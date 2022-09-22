@@ -15,7 +15,7 @@ namespace cse210_01
                 showBoard(currentBoard);
                 int playerChoice = receivePlayerMove(currentPlayer);
                 makePlayerMove(currentBoard, playerChoice, currentPlayer);
-                playerTurn(currentPlayer);
+                currentPlayer = playerTurn(currentPlayer);
             }
             showBoard(currentBoard);
             Console.Write("Thank you for playing Tic-Tac-Toe");
