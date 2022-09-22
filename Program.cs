@@ -51,6 +51,10 @@ namespace cse210_01
                     break;
                 }
             }
+            if(foundDigit == false)
+            {
+                Console.WriteLine("The game is a Tie");
+            }
             return !foundDigit;
         }
         static bool whoWon(List<string> gameBoard, string player)
@@ -68,6 +72,7 @@ namespace cse210_01
                 )
             {
                 isWinner = true;
+                Console.WriteLine($"The winner is {player}");
             }
 
             return isWinner; 
